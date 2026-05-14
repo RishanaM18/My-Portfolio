@@ -531,13 +531,6 @@ h2{
 
 /* ================= FOOTER ================= */
 
-footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:1.5rem;
-  position:relative;
-}
 
 #scrollTop{
   position:fixed;
