@@ -1,19 +1,36 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Rishana M — Web Developer & Data Analyst" />
+
   <title>Rishana M | Portfolio</title>
-  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body>
-  <!-- ===== Navigation ===== -->
+
+  <!-- ================= NAVBAR ================= -->
   <header class="navbar">
     <div class="logo">Rishana<span>M</span></div>
-    <nav class="nav-links">
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -21,145 +38,358 @@
       <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
+
       <button id="theme-toggle">🌙</button>
     </nav>
   </header>
 
-  <!-- ===== Hero Section ===== -->
+  <!-- ================= HERO ================= -->
   <section id="hero">
+
     <div class="hero-content">
+
       <h1>Rishana M</h1>
-      <h2>Web Developer & Data Analytics Enthusiast</h2>
-      <p>Transforming data into insights and ideas into digital experiences.</p>
+
+      <h2 class="typing-text"></h2>
+
+      <p>
+        Transforming data into insights and ideas into beautiful digital experiences.
+      </p>
+
       <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
-        <a href="assets/resume.pdf" class="btn" target="_blank">View Resume</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+        <a href="assets/resume.pdf" target="_blank" class="btn">
+          View Resume
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+          Contact Me
+        </a>
       </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/RishanaM18" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rishanamohamedalijinna18" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:rishanamohamed18@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section hidden">
+
     <h2>About Me</h2>
-    <p>
-      I’m a passionate Computer Science student blending analytical reasoning with creativity.
-      I love building intuitive websites and extracting insights from complex data.
-      My goal is to contribute to projects where technology meets design and impact.
-    </p>
-    <ul class="highlights">
-      <li>Creative Web Developer</li>
-      <li>Data Visualization & Business Intelligence</li>
-      <li>Collaborative & Curious Learner</li>
-    </ul>
+
+    <div class="about-container">
+
+      <div class="about-text">
+        <p>
+          I’m a passionate Computer Science Engineering student with a strong interest in
+          Web Development and Data Analytics.
+        </p>
+
+        <p>
+          I enjoy building interactive websites, analyzing datasets,
+          and creating meaningful digital experiences.
+        </p>
+
+        <p>
+          My goal is to contribute to innovative projects where
+          creativity and technology come together.
+        </p>
+      </div>
+
+      <div class="about-cards">
+
+        <div class="mini-card">
+          <i class="fas fa-code"></i>
+          <h3>Web Developer</h3>
+        </div>
+
+        <div class="mini-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Data Analyst</h3>
+        </div>
+
+        <div class="mini-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Creative Thinker</h3>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- ===== Skills ===== -->
-  <section id="skills" class="section alt-bg">
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section alt-bg hidden">
+
     <h2>Skills</h2>
+
     <div class="skills-grid">
+
       <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <ul><li>Java</li><li>Python</li><li>SQL</li></ul>
+        <i class="fas fa-laptop-code"></i>
+
+        <h3>Programming</h3>
+
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Frameworks & Libraries</h3>
-        <ul><li>HTML / CSS / JavaScript</li><li>Power BI</li><li>Pandas, Matplotlib, Seaborn</li></ul>
+        <i class="fas fa-globe"></i>
+
+        <h3>Web Development</h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Tools & Technologies</h3>
-        <ul><li>Git & GitHub</li><li>VS Code</li><li>Excel</li></ul>
+        <i class="fas fa-chart-pie"></i>
+
+        <h3>Analytics</h3>
+
+        <ul>
+          <li>Power BI</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+        </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Soft Skills</h3>
-        <ul><li>Problem Solving</li><li>Adaptability</li><li>Leadership</li><li>Time Management</li></ul>
+        <i class="fas fa-tools"></i>
+
+        <h3>Tools</h3>
+
+        <ul>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Excel</li>
+        </ul>
       </div>
+
     </div>
+
   </section>
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section">
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section hidden">
+
     <h2>Projects</h2>
+
     <div class="card-grid">
+
       <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+        alt="Food Project">
+
         <h3>E-Commerce Food Court Website</h3>
-        <p>A responsive food ordering interface with real-time cart updates and an engaging UI.</p>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-        <a href="[github.com](https://github.com/RishanaM18)" target="_blank" class="link">View on GitHub</a>
+
+        <p>
+          Responsive food ordering platform with real-time cart UI
+          and attractive modern design.
+        </p>
+
+        <p>
+          <strong>Technologies:</strong>
+          HTML, CSS, JavaScript
+        </p>
+
+        <a href="https://github.com/RishanaM18"
+        target="_blank"
+        class="link">
+          View Project
+        </a>
+
       </div>
+
       <div class="card">
-        <h3>Sales Data Analysis Project</h3>
-        <p>Performed data cleaning and exploratory analysis to uncover sales trends and actionable insights.</p>
-        <p><strong>Technologies:</strong> Python, Pandas, Matplotlib, Seaborn</p>
-        <a href="[github.com](https://github.com/RishanaM18)" target="_blank" class="link">View on GitHub</a>
+
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+        alt="Analytics Project">
+
+        <h3>Sales Data Analysis</h3>
+
+        <p>
+          Performed data cleaning, visualization,
+          and trend analysis using Python libraries.
+        </p>
+
+        <p>
+          <strong>Technologies:</strong>
+          Python, Pandas, Matplotlib
+        </p>
+
+        <a href="https://github.com/RishanaM18"
+        target="_blank"
+        class="link">
+          View Project
+        </a>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- ===== Experience ===== -->
-  <section id="experience" class="section alt-bg">
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section alt-bg hidden">
+
     <h2>Experience</h2>
+
     <div class="timeline">
+
       <div class="timeline-item">
         <h3>Web Development & Digital Marketing Intern</h3>
+
         <span>Layerscode Technology</span>
-        <p>Built responsive websites and supported SEO and social media marketing campaigns.</p>
+
+        <p>
+          Built responsive websites and supported SEO and digital campaigns.
+        </p>
       </div>
+
       <div class="timeline-item">
         <h3>Data Analytics Intern</h3>
+
         <span>Skillfied Mentor</span>
-        <p>Worked on data cleaning and visualization using Excel and Power BI on real-world datasets.</p>
+
+        <p>
+          Worked on data visualization and analysis using Excel and Power BI.
+        </p>
       </div>
+
     </div>
+
   </section>
 
-  <!-- ===== Education ===== -->
-  <section id="education" class="section">
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section hidden">
+
     <h2>Education</h2>
+
     <div class="edu-grid">
+
       <div class="edu-card">
-        <h3>B.E. Computer Science and Engineering</h3>
-        <span>GCE Trichy — CGPA: 7.8/10 (Pursuing)</span>
+        <h3>B.E Computer Science and Engineering</h3>
+
+        <span>
+          GCE Trichy — CGPA: 7.8/10
+        </span>
       </div>
+
       <div class="edu-card">
         <h3>HSC</h3>
-        <span>GGHS Kottampatty — 90% (2022)</span>
+
+        <span>
+          GGHS Kottampatty — 90%
+        </span>
       </div>
+
       <div class="edu-card">
         <h3>SSLC</h3>
-        <span>GGHS Kottampatty — 86% (2020)</span>
+
+        <span>
+          GGHS Kottampatty — 86%
+        </span>
       </div>
+
     </div>
+
   </section>
 
-  <!-- ===== Certifications ===== -->
-  <section id="certifications" class="section alt-bg">
-    <h2>Certifications & Achievements</h2>
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section alt-bg hidden">
+
+    <h2>Certifications</h2>
+
     <ul class="list">
-      <li>Data Analytics Course – Udemy (Nov 2025)</li>
-      <li>Power BI Masterclass – Novitech Pvt Ltd (Sep 2025)</li>
-      <li>Introduction to SQL – Simplilearn (Sep 2024)</li>
-      <li>Python Programming – Udemy (Mar 2024)</li>
-      <li>Best Student Award | Green Belt in Karate | District-Level Essay Competition Winner</li>
+      <li>Data Analytics Course – Udemy</li>
+      <li>Power BI Masterclass – Novitech Pvt Ltd</li>
+      <li>Introduction to SQL – Simplilearn</li>
+      <li>Python Programming – Udemy</li>
+      <li>Best Student Award | Green Belt in Karate</li>
     </ul>
+
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Let’s connect and collaborate!</p>
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section hidden">
+
+    <h2>Contact Me</h2>
+
+    <p class="contact-text">
+      Let's connect and collaborate together.
+    </p>
+
     <div class="contact-grid">
-      <p><strong>Email:</strong> <a href="mailto:rishanamohamed18@gmail.com">rishanamohamed18@gmail.com</a></p>
-      <p><strong>Phone:</strong> 7904434664</p>
-      <p><strong>LinkedIn:</strong> <a href="[linkedin.com](https://www.linkedin.com/in/rishanamohamedalijinna18)" target="_blank">Profile</a></p>
-      <p><strong>GitHub:</strong> <a href="[github.com](https://github.com/RishanaM18)" target="_blank">@RishanaM18</a></p>
+
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+
+        <h3>Email</h3>
+
+        <p>
+          rishanamohamed18@gmail.com
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+
+        <h3>Phone</h3>
+
+        <p>
+          7904434664
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+
+        <h3>LinkedIn</h3>
+
+        <a href="https://www.linkedin.com/in/rishanamohamedalijinna18"
+        target="_blank">
+          View Profile
+        </a>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- ===== Footer ===== -->
+  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>© 2026 Rishana M • Built with 💜 using HTML, CSS, and JS</p>
+
+    <p>
+      © 2026 Rishana M • Built with 💜 using HTML, CSS & JavaScript
+    </p>
+
     <button id="scrollTop">↑</button>
+
   </footer>
+
 </body>
 </html>
